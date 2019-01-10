@@ -1,3 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render# render template(flask)のと同じ。HTMLファイルを読むときに使う
 
-# Create your views here.
+def index(request):
+    return render(request, "demo_app/index.html", {})
